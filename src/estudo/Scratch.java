@@ -20,18 +20,25 @@ public class Scratch {
             ans[3] = "60";
             ans[4] = "Brasilia";
 
-            Scanner scanner = new Scanner(System.in);
-            ans[0] = scanner.next();
 
             outputQuestionsAndAnswers(que, ans);
         }
 
         public static void outputQuestionsAndAnswers(String[] questions, String[] answers){
+              Scanner scanner = new Scanner(System.in);
 
-            System.out.println(questions[0]);
-            if (answers[0].equals("North America")) {
-                System.out.println("Yea! The answer is North America");
-            }
+              while(true){
+
+                  System.out.println(questions[0]);
+
+                  if(scanner.next().equals(answers[0])){
+                    System.out.println("Correct");
+                    continue;
+                  }
+
+
+                  }
+
 
     }
 
